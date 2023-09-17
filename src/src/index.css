@@ -1,0 +1,68 @@
+/* Calendar container */
+.calendar {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Calendar grid */
+  .calendar-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+  }
+  
+  /* Calendar week */
+  .calendar-week {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  /* Calendar day */
+  .calendar-day {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+  
+  /* Empty day (for filling remaining cells) */
+  .calendar-day.empty {
+    visibility: hidden;
+  }
+
+  .calendar-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 8px;
+  }
+  
+  /* Individual day in header */
+  .calendar-header div {
+    flex-basis: calc(100% / 7);
+    text-align: center;
+  }
+
+  .calendar-day.NO_CURRENT_MONTH {
+    color: #ccc; /* Change the color to a muted gray */
+  }
+  
+  /* Add CSS for WEEKEND */
+  .calendar-day.WEEKEND {
+    background-color: #f0f0f0; /* Change the background color to a light gray */
+    font-weight: bold; /* Make the text bold */
+  }
+  
+  /* Add CSS for TODAY */
+  .calendar-day.TODAY {
+    background-color: #ffc; /* Change the background color to a light yellow */
+    border: 1px solid #ff9800; /* Add a border with an orange color */
+    border-radius: 50%; /* Make the border circular */
+  }
